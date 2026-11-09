@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Project | Pasidu Daham Senasighe E-Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills-work.html" class="nav-link">Skills Work</a>
+        <a href="research-project.html" class="nav-link active">Research Project</a>
+        <a href="oral-presentation.html" class="nav-link">Oral Presentation</a>
+        <a href="peer-reviews.html" class="nav-link">Peer Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">
+          <span class="brand-title">E-PORTFOLIO</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="content-container">
+      <div class="page-header-center">
+        <span class="page-title-badge">Applied Investigation</span>
+        <h1 class="page-tagline">My Research Projects</h1>
+        <p class="page-subtext">Business Analytics, Data-Driven Strategy & Internet Domain Frameworks</p>
+      </div>
+
+      <!-- Slide Deck Container for Research Report -->
+      
+       
+
+     
+  </main>
+
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initSlideDeck('researchDeck', [
+        { filename: 'research1.png', label: 'Research Project - Overview & Methodology' },
+        { filename: 'research2.png', label: 'Research Project - Strategy & Findings' }
+      ]);
+    });
+  </script>
+</body>
+</html>

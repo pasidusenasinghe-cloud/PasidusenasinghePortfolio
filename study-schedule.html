@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Schedule (2026) | Pasidu Daham Senasighe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills-work.html" class="nav-link active">Skills Work</a>
+        <a href="research-project.html" class="nav-link">Research Project</a>
+        <a href="oral-presentation.html" class="nav-link">Oral Presentation</a>
+        <a href="peer-reviews.html" class="nav-link">Peer Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">
+          <span class="brand-title">E-PORTFOLIO</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="content-container">
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&gt;</span>
+        <a href="skills-work.html">Skills Work</a>
+        <span class="breadcrumb-separator">&gt;</span>
+        <span>Study Schedule 2026</span>
+      </nav>
+
+      <div class="page-header-center">
+        <span class="page-title-badge">Academic Planning</span>
+        <h1 class="page-tagline">Study Shedule 2026</h1>
+        <p class="page-subtext">Coursework Timetable, Study Milestones & Time Allocation Matrix</p>
+      </div>
+
+      <!-- Single Document / Slide Stage -->
+      <div class="slide-deck-container doc-deck" id="studyScheduleDeck">
+        <div class="slide-deck-header">
+          <div class="slide-deck-title-group">
+            <h2 class="deck-title">Schedule Sheet</h2>
+            <span class="deck-counter">1 of 1</span>
+          </div>
+
+          <div class="deck-actions">
+            <a href="skills-work.html" class="deck-btn">&larr; Back to Skills Work</a>
+          </div>
+        </div>
+
+        <div class="slide-stage">
+          <div class="slide-display-frame">
+            <img 
+              src="images/studyshchedule.png" 
+              alt="Academic Study Schedule 2026" 
+              class="slide-real-img"
+            />
+            
+            <div class="slide-placeholder-card" style="display: none;">
+              <div class="placeholder-icon">📅</div>
+              <h3 class="placeholder-title">Study Schedule Sheet</h3>
+              <div class="placeholder-path">Path: images/studyshchedule.png</div>
+              <p class="placeholder-hint">
+                Add your study schedule file <code>studyshchedule.png</code> into the <code>images/</code> folder to display your schedule sheet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-deck-footer">
+          <div class="deck-keyboard-tip">Academic Transition Planning — Business Analytics Foundation</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initSlideDeck('studyScheduleDeck', [
+        { filename: 'studyshchedule.png', altFilename: 'studyschedule.png', label: 'Academic Study Schedule Sheet' }
+      ]);
+    });
+  </script>
+</body>
+</html>

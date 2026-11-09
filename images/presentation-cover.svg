@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Sky Gradient -->
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#061c28"/>
+      <stop offset="40%" stop-color="#0a3947"/>
+      <stop offset="75%" stop-color="#235c59"/>
+      <stop offset="100%" stop-color="#e8d3b0"/>
+    </linearGradient>
+
+    <!-- Mountain Gradient 1 -->
+    <linearGradient id="mountain1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142429"/>
+      <stop offset="100%" stop-color="#0a1215"/>
+    </linearGradient>
+
+    <!-- Mountain Gradient 2 -->
+    <linearGradient id="mountain2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#204044"/>
+      <stop offset="100%" stop-color="#0f2225"/>
+    </linearGradient>
+
+    <!-- Winding Path Gradient -->
+    <linearGradient id="road" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+
+    <!-- Cloud Glow -->
+    <radialGradient id="cloud" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky Base -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <!-- Distant Mountains -->
+  <polygon points="-50,500 180,180 420,500" fill="#1b393e" opacity="0.6"/>
+  <polygon points="400,500 620,160 850,500" fill="#1b393e" opacity="0.5"/>
+
+  <!-- Clouds -->
+  <ellipse cx="200" cy="190" rx="140" ry="35" fill="url(#cloud)"/>
+  <ellipse cx="650" cy="220" rx="160" ry="40" fill="url(#cloud)"/>
+
+  <!-- Main Steep Mountain -->
+  <path d="M 120 500 L 380 90 L 410 95 L 430 140 L 680 500 Z" fill="url(#mountain1)"/>
+  <path d="M 380 90 L 410 95 L 430 140 L 460 250 L 520 380 L 680 500 L 440 500 Z" fill="url(#mountain2)" opacity="0.8"/>
+
+  <!-- Winding Path to Peak -->
+  <!-- Segment 1: Bottom Entrance to First Curve -->
+  <path d="M 280 500 C 310 440, 370 410, 360 360 C 350 310, 270 280, 290 230 C 305 190, 380 170, 380 130 C 380 100, 395 90, 400 90 L 406 92 C 400 98, 386 110, 386 135 C 386 172, 316 193, 302 232 C 285 278, 360 306, 372 358 C 382 405, 325 438, 305 500 Z" fill="url(#road)"/>
+
+  <!-- Little Travelers on Path -->
+  <circle cx="330" cy="420" r="4" fill="#1e293b"/>
+  <line x1="330" y1="424" x2="330" y2="435" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="340" cy="335" r="3.5" fill="#1e293b"/>
+  <line x1="340" y1="338" x2="340" y2="347" stroke="#1e293b" stroke-width="1.8"/>
+  <circle cx="320" cy="220" r="3" fill="#1e293b"/>
+  <line x1="320" y1="223" x2="320" y2="230" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Title Overlay subtle -->
+  <rect x="0" y="440" width="800" height="60" fill="rgba(5,10,15,0.7)"/>
+  <text x="400" y="478" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="3">MY LEARNING JOURNEY</text>
+</svg>
